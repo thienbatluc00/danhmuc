@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOP UY TÍN CỦA THIÊN BÁT LỤC</title>
+
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      gap: 20px;
+    }
+    body.light-mode {
+      background-color: #f4f4f9;
+      color: #000000;
+    }
+header {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+header h1 {
+  display: inline-block;
+  animation: chạyChữ 15s linear infinite;
+}
+
+@keyframes chạyChữ {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: transparent;
+  z-index: 999;
+}
+  .theme-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+  padding: 8px 16px;
+  border: 2px solid #888;
+  border-radius: 20px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+    .custom-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 280px;
+      height: 60px;
+      border: 3px solid #37a6e6;
+      background: #000;
+      color: #e6e7e9;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #3509f7;
+      text-align: center;
+      border-radius: 8px;
+    }
+    body.light-mode .custom-btn {
+      background: #21a378;
+      color: #030303;
+      border-color: #2804f5;
+      box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
+    }
+    .avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chào Mọi Người đến với shop của thiên ❤️. Shop 100% Uy Tín😘 và sử dụng dịch vụ nếu có lỗi thì liên hệ HỖ TRỢ bên dưới</h1>
+  </header>
+  <button class="theme-btn" onclick="toggleTheme()" id="themeBtn">🌙 Chế độ Tối</button>
+  <div>
+    <img src="thienbatluc.jpg" alt="Ảnh Thiên Bát Lục " class="Avatar" width="200" height="200">
+  </div>
+  <a href="https://discord.com/invite/q5zD7z8vX3" target="_blank" class="custom-btn">
+    DISCORD
+  </a>
+  <a href="https://shopthienbl.com" target="_blank" class="custom-btn">
+    DỰ DỊCH UY TÍN
+  </a>
+    <a href="https://www.facebook.com/thienblrealutso1" target="_blank" class="custom-btn">
+    Hỗ Trợ (  FACEBOOK  )
+  </a>
+  <a href="https://www.tiktok.com/@thienbatluc74" target="_blank" class="custom-btn">
+    Tóp Tóp (  THIENBATLUC  )
+  </a>
+  <a href="https://www.tiktok.com/@thienlatoi74" target="_blank" class="custom-btn">
+    Tóp Tóp (  TÔI LÀ THIÊN  )
+  </a>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const btn = document.getElementById('themeBtn');
+      
+      body.classList.toggle('light-mode');
+      
+      if (body.classList.contains('light-mode')) {
+        btn.textContent = '☀️ Chế độ Sáng';
+      } else {
+        btn.textContent = '🌙 Chế độ Tối';
+      }
+    }
+    <footer>Thiên Bát lục</footer>
+  </script>
+</body>
+</html>
